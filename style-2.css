@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+/* common */
+body {
+  background: #FAFAFA;
+  margin: 0 auto;
+  max-width: 560px;
+  width: calc(100% - 8px - 8px);
+  color: #3D3D3D;
+}
+a{
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 16px 0 0;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+h3{
+  margin: 0;
+  font-weight: normal;
+}
+h4{
+  margin: 0;
+  font-weight: normal;
+}
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* header */
+.title{
+  color: #3D3D3D;
+
+}
+
+.ul_nav_li a {
+  text-decoration: none;
+  color: #3D3D3D;
+  opacity: 0.4;
+  font-weight: 500;
+  border-bottom: 2px solid #FAFAFA;
+  transition-duration: 500ms;
+}
+
+.ul_nav_li a:hover {
+  border-bottom: 2px solid #3D3D3D ;
+  opacity: 1;
+}
+
+.nav {
+  margin: 48px auto 64px;
+  padding: 0 32px;
+  font-size: 20px;
+}
+
+.ul_nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+}
+
+.li_nav {
+  cursor: pointer;
+}
+
+
+
+/* コンテナーの中身 */
+.container{
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  padding: 16px;
+}
+.container h2{
+  margin-top: 32px;
+}
+.container img{
+  margin-top: 32px;
+}
+.ctg{
+  color: #3D3D3D;
+  padding: 4px;
+  border: 2px dashed #7BB7BB;
+}
+.container h3{
+  margin-top: 32px;
+  padding-left: 8px;
+  border-left: 5px solid #7BB7BB;
+  background: #E6F7F8;
+}
+.container p{
+  margin-top: 20px;
+  padding-left: 16px;
+  line-height: 1.7;
+}
+.tag_list{
+  margin-top: 64px;
+  display: flex;
+}
+.tag_list h4{
+  padding-right: 16px;
+}
+.tag_list a{
+  color: #FAFAFA;
+}
+.tag_list ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.tag_list li{
+  margin-right: 10px;
+  background: #3D3D3D;
+  border-radius: 8px;
+  padding: 0 20px;
+}
+iframe{
+  margin-top: 20px;
+}
+
+
+
+
+
+/* footer */
+footer {
+  margin-top: 64px;
+  padding: 64px;
+  text-align: center;
+}
+
+
+@media (min-width: 800px) {
+  body {
+    max-width: 800px;
+    margin: 0 auto;
+    width: calc(100% - 16px - 16px);
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+  }
+
+  /* main */
+  main {
+    width: 70%;
+  }
+
+  /* aside */
+  aside {
+    width: 30%;
+  }
+
+  .advertisement {
+    font-size: 10px;
+  }
+}
+

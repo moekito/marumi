@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/* common */
+body {
+  background: #FAFAFA;
+  margin: 0 auto;
+  max-width: 560px;
+  width: calc(100% - 16px - 16px);
+  color: #3D3D3D;
+}
+a{
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+h3{
+  margin: 0;
+  font-weight: normal;
+}
+h4{
+  margin: 0;
+  font-weight: normal;
+}
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* header */
+.title{
+  color: #3D3D3D;
+
+}
+
+.ul_nav_li a {
+  text-decoration: none;
+  color: #3D3D3D;
+  opacity: 0.4;
+  font-weight: 500;
+  border-bottom: 2px solid #FAFAFA;
+  transition-duration: 500ms;
+}
+
+.ul_nav_li a:hover {
+  border-bottom: 2px solid #3D3D3D ;
+  opacity: 1;
+}
+
+.nav {
+  margin: 48px auto 64px;
+  padding: 0 32px;
+  font-size: 20px;
+}
+
+.ul_nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+}
+
+.li_nav {
+  cursor: pointer;
+}
+
+
+
+/* コンテナーの中身 */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+.container a{
+  color: #3D3D3D;
+}
+.container ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container h2{
+  margin-left: 8px;
+}
+
+
+/* main */
+main {
+}
+.kiji{
+  margin: 16px 16px 24px;
+  padding: 0 8px;
+  padding-bottom: 8px;
+  border-radius: 16px;
+  background: white;
+}
+
+.kiji p{
+  padding-left:16px;
+}
+.kiji li{
+  padding-left:16px;
+}
+.kiji ul{
+  display: flex;
+  font-size: 12px;
+}
+.kiji h3{
+  padding-left:16px;
+  margin-top: 8px;
+  border-bottom: 1px dashed #3D3D3D;
+}
+.kiji h4{
+  font-size: 12px;
+  padding-left:16px;
+}
+.ctg{
+  background: #BAE8EB;
+  padding: 0 4px;
+}
+.tag_list{
+  display: flex;
+  margin-top: 8px;
+}
+.tag_list a{
+  padding: 0 8px;
+}
+.tag_list a:hover{
+  background: #E6F7F8;
+}
+
+
+/* aside */
+aside {
+  background: skyblue;
+}
+
+.advertisement {
+  font-size: 10px;
+}
+
+/* footer */
+footer {
+  padding: 64px 0;
+  text-align: center;
+
+}
+
+
+@media (min-width: 560px) {
+  body {
+    max-width: 800px;
+    margin: 0 auto;
+    width: calc(100% - 32px - 32px);
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+  }
+
+  /* main */
+  main {
+    width: 70%;
+  }
+
+  /* aside */
+  aside {
+    width: 30%;
+  }
+
+  .advertisement {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 800) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: calc(100% - 32px - 32px);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+}
