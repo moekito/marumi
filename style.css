@@ -4,11 +4,12 @@
 body {
   background: #FAFAFA;
   margin: 0 auto;
-  max-width: 560px;
+  max-width: 650px;
   width: calc(100% - 16px - 16px);
   color: #3D3D3D;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -21,14 +22,17 @@ h2 {
   margin: 0;
   font-weight: normal;
 }
-h3{
+
+h3 {
   margin: 0;
   font-weight: normal;
 }
-h4{
+
+h4 {
   margin: 0;
   font-weight: normal;
 }
+
 p {
   margin: 0;
 }
@@ -38,7 +42,7 @@ img {
 }
 
 /* header */
-.title{
+.title {
   color: #3D3D3D;
 
 }
@@ -47,26 +51,24 @@ img {
   text-decoration: none;
   color: #3D3D3D;
   opacity: 0.4;
-  font-weight: 500;
-  border-bottom: 2px solid #FAFAFA;
+  border: 2px solid #3D3D3D;
+  padding: 4px 16px;
+  border-radius: 8px;
   transition-duration: 500ms;
 }
 
 .ul_nav_li a:hover {
-  border-bottom: 2px solid #3D3D3D ;
   opacity: 1;
 }
 
 .nav {
-  margin: 48px auto 64px;
-  padding: 0 32px;
-  font-size: 20px;
+  margin: 20px auto 64px;
 }
 
 .ul_nav {
   display: flex;
-  justify-content: space-between;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap:20px;
   list-style: none;
   padding: 0;
 }
@@ -83,61 +85,77 @@ img {
   width: 100%;
   display: block;
 }
-.container a{
+
+.container a {
   color: #3D3D3D;
 }
-.container ul{
+
+.container ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.container h2{
+
+.container h2 {
   margin-left: 8px;
 }
 
 
 /* main */
-main {
-}
-.kiji{
+main {}
+
+.kiji {
   margin: 16px 16px 24px;
-  padding: 0 8px;
+  padding: 0 16px 0 8px;
   padding-bottom: 8px;
   border-radius: 16px;
   background: white;
 }
 
-.kiji p{
-  padding-left:16px;
+.kiji p {
+  padding-left: 16px;
+  margin-top: 16px;
 }
-.kiji li{
-  padding-left:16px;
+
+.kiji li {
+  padding-left: 16px;
 }
-.kiji ul{
+
+.kiji ul {
   display: flex;
   font-size: 12px;
 }
-.kiji h3{
-  padding-left:16px;
+
+.kiji h3 {
+  padding-left: 16px;
   margin-top: 8px;
-  border-bottom: 1px dashed #3D3D3D;
+  font-size: 24px;
+  font-weight: 500;
 }
-.kiji h4{
+.kiji h3:hover{
+  opacity: 0.6;
+}
+
+.kiji h4 {
   font-size: 12px;
-  padding-left:16px;
+  padding-left: 16px;
 }
-.ctg{
+
+.ctg {
   background: #BAE8EB;
   padding: 0 4px;
 }
-.tag_list{
+
+.tag_list {
   display: flex;
-  margin-top: 8px;
+  margin-top: 16px;
 }
-.tag_list a{
+
+.tag_list a {
   padding: 0 8px;
 }
-.tag_list a:hover{
+
+.tag_list a:hover {
   background: #E6F7F8;
 }
 
@@ -159,18 +177,20 @@ footer {
 }
 
 
-@media (min-width: 560px) {
+@media (min-width: 650px) {
   body {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     width: calc(100% - 32px - 32px);
   }
+
 
   .container {
     margin: 0 auto;
     width: 100%;
     display: flex;
   }
+
 
   /* main */
   main {
@@ -187,9 +207,9 @@ footer {
   }
 }
 
-@media (min-width: 800) {
+@media (min-width: 1000) {
   body {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     width: calc(100% - 32px - 32px);
   }
